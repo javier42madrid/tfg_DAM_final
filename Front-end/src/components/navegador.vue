@@ -18,4 +18,9 @@
 </template>
 
 <style>
+.my_button {
+    background-color:white;
+    border-block-color: black;
+    border-radius: 5px;
+}
 </style>

@@ -16,7 +16,7 @@ array_usuarios = [Usuarios] * 50
 
 @app.route('/api/v1.0/reservas')
 def getMensaje ():
-    reserv = Reservas.query.all()
+    reserv = Reservas.query.order_by("fecha").all()
     if (reserv != []):
         response = [
             {
